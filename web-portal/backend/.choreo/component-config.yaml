@@ -21,15 +21,16 @@ spec:
       # The path should be relative to the Docker context.
       schemaFilePath: openapi.yaml
   outbound:
-    serviceReferences:
-    - name: choreo:///codechallenge/appointment-management/cmrqnc/8b1c3/v1.0/ORGANIZATION
-      connectionConfig: 01eef67c-b6e6-17c0-9120-68782ddbb0c9
+      serviceReferences:
+      - name: choreo:///kachiexresort/appointment-management/oaltei/8b1c3/v1/ORGANIZATION
+      connectionConfig: 01ef0ca0-fb2b-1630-8431-a98ee76928d4
       env:
       - from: ServiceURL
-        to: APPOINTMENT_SERVICE_URL
+        to: <YOUR_ENV_VARIABLE_NAME_HERE>
       - from: ConsumerKey
-        to: APPOINTMENTS_OAUTH_CLIENT_ID
+        to: <YOUR_ENV_VARIABLE_NAME_HERE>
       - from: ConsumerSecret
-        to: APPOINTMENTS_OAUTH_CLIENT_SECRET
+        to: <YOUR_ENV_VARIABLE_NAME_HERE>
       - from: TokenURL
-        to: APPOINTMENTS_OAUTH_TOKEN_URL
+        to: <YOUR_ENV_VARIABLE_NAME_HERE>
+
